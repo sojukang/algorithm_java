@@ -1,4 +1,4 @@
-package main;
+package main.InputOutputArray;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,7 +33,6 @@ public class OverTheMean_4344 {
 
 	private static List<Integer> getIntegersBySpace(BufferedReader br) throws IOException {
 		List<String> strings = Arrays.asList(br.readLine().split(" "));
-		List<Integer> integers = strings.stream().map(Integer::parseInt).collect(Collectors.toList());
-		return integers;
+		return strings.stream().map(Integer::parseInt).collect(Collectors.toList());
 	}
 }
