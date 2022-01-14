@@ -17,10 +17,7 @@ public class OXQuiz_8958 {
 	}
 
 	private static void printScore(List<String> list) {
-		int score = 0;
-		for (String os : list) {
-			score += sum(os.length());
-		}
+		int score = list.stream().mapToInt(os -> sum(os.length())).sum();
 		System.out.println(score);
 	}
 
