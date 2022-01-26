@@ -26,5 +26,4 @@ public class Output {
 		bw.write(string);
 		bw.newLine();
 	}
-
 }
