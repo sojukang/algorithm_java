@@ -39,4 +39,8 @@ public class ListTools {
 		Arrays.fill(data, defaultValue);
 		return Arrays.asList(data);
 	}
+
+	private static IntStream intToStringList(int i) {
+		return Arrays.asList(Integer.toString(i).split("")).stream().mapToInt(Integer::parseInt);
+	}
 }
